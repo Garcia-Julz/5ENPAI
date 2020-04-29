@@ -1,4 +1,4 @@
-/* .App {
+.App {
   text-align: center;
 }
 
@@ -37,16 +37,15 @@
   }
 }
 
-body,h1 {font-family: "Raleway", sans-serif}
-    body, html {height: 100%} */
+body,h1 {font-family: "Arial", sans-serif}
+    body, html {height: 100%}
     .bgimg {
       background-image: url('./assets/5enpai_background_service_homepage.png');
-      min-height: 100%;
+      min-height: 100vh;
       background-position: center;
       background-size: cover;
     }
 
-#border1 {
-  margin:auto;
-  width:40%;
+.join-link {
+  text-align: center;
 }
