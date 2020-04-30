@@ -40,7 +40,7 @@
 body,h1 {font-family: "Arial", sans-serif}
     body, html {height: 100%}
     .bgimg {
-      background-image: url('./assets/5enpai_background_service_homepage.png');
+      /* background-image: url('./assets/5enpai_background_service_homepage.png'); */
       min-height: 100vh;
       background-position: center;
       background-size: cover;
@@ -49,3 +49,14 @@ body,h1 {font-family: "Arial", sans-serif}
 .join-link {
   text-align: center;
 }
+
+body{
+  background:
+         /* top, transparent black, faked with gradient */ 
+         linear-gradient(
+           rgba(0, 0, 0, 0.7), 
+           rgba(0, 0, 0, 0.7)
+         ),
+         /* bottom, image */
+         url('./assets/5enpai_background_service_homepage.png');
+     }

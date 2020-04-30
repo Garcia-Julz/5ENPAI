@@ -5,7 +5,8 @@
     text-transform: uppercase;
     text-decoration: none;
     border: 0.2em solid #F541C0;
-    padding: 0.5em 1em;
+    padding: 0.45em 1.5em;
+    box-shadow: 0px 0px 10px 5px rgba(245, 65, 191, 0.5);
     &::before {
       content: "";
       display: block;
