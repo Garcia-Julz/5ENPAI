@@ -1,10 +1,6 @@
-import React from 'react';
-import Logo from './Assets/5ENPAI_Logo_home_.png';
-import './App.css';
-import './JoinButton.scss';
-// import Button from './JoinButton';
+import React from "react";
 
-function App() {
+const Home = () => {
   return (
     <>
     <div className="bgimg w3-display-container w3-animate-opacity w3-text-white">
@@ -35,6 +31,6 @@ function App() {
     </div>
     </>
   );
-}
+};
 
-export default App;
+export default Home;
