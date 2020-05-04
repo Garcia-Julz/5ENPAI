@@ -2,7 +2,7 @@ import React from "react";
 import Logo from '../../Assets/5ENPAI_Logo_home_.png'
 
 
-const Home = () => {
+const FAQ = () => {
   return (
     <div className="bgimg w3-display-container w3-animate-opacity w3-text-white">
       <div className="logo container">
@@ -17,7 +17,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w3-display-middle">
-        <h1 className="w3-xxxlarge w3-animate-top">RETHINK BUYING</h1>
+        <h1 className="w3-xxxlarge w3-animate-top">FAQ TEST</h1>
         <hr id="border1" className="w3-border-grey" />
         <p className="w3-large w3-center">Join our Beta Launch List 🚀</p>
         <div className="join-link">
@@ -33,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FAQ;
