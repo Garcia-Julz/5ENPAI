@@ -13,18 +13,19 @@ const NavBar = () => {
             5ENPAI
           </div>
         </div>
-        <ul className="w3-display-topright w3-padding-large w3-xlarg" style={{"display" : "flex", "color" : "white", "list-style" : "none"}}>
+        <ol className="w3-display-topright w3-padding-large w3-xlarg" style={{"display" : "flex", "color" : "white", "list-style" : "none"}}>
           <li>
-            <Link className="nav-link" to="/">
+            <a className="nav-link" href="/">
               Home
-            </Link>
+            </a>
           </li>
+          <br/>
           <li>
-            <Link className="nav-link" to="/faq">
-              FAQ
-            </Link>
+            <a className="nav-link" href="faq">
+              FAQs
+            </a>
           </li>
-        </ul>
+        </ol>
       </nav>
     </header>
   );
