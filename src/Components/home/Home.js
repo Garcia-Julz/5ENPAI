@@ -1,11 +1,10 @@
 import React from "react";
-import Logo from '../../Assets/5ENPAI_Logo_home_.png'
 
 
 const Home = () => {
   return (
     <div className="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <div className="logo container">
+      {/* <div className="logo container">
         <div className="w3-display-topleft w3-padding-large w3-xlarge" style={{"display" : "flex"}}>
           5ENPAI
           <img src={Logo} style={{"width" : "26%", "margin-left" : "3%"}}/>
@@ -15,7 +14,7 @@ const Home = () => {
             FAQs
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="w3-display-middle">
         <h1 className="w3-xxxlarge w3-animate-top">RETHINK BUYING</h1>
         <hr id="border1" className="w3-border-grey" />
