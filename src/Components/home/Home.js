@@ -3,18 +3,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      {/* <div className="logo container">
-        <div className="w3-display-topleft w3-padding-large w3-xlarge" style={{"display" : "flex"}}>
-          5ENPAI
-          <img src={Logo} style={{"width" : "26%", "margin-left" : "3%"}}/>
-        </div>
-        <div className="w3-display-topright w3-padding-large w3-xlarge">
-          <a href="faq">
-            FAQs
-          </a>
-        </div>
-      </div> */}
+    <div className="bgimg w3-display-container w3-animate-opacity w3-text-white" id="Body-Home">
       <div className="w3-display-middle">
         <h1 className="w3-xxxlarge w3-animate-top">RETHINK BUYING</h1>
         <hr id="border1" className="w3-border-grey" />
