@@ -1,36 +1,79 @@
 import React from "react";
-import Logo from '../../Assets/5ENPAI_Logo_home_.png'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button'
 
-
-const Home = () => {
+function MyVerticallyCenteredModal(props) {
   return (
-    <div className="bgimg w3-display-container w3-animate-opacity w3-text-white">
-      <div className="logo container">
-        <div className="w3-display-topleft w3-padding-large w3-xlarge" style={{"display" : "flex"}}>
-          5ENPAI
-          <img src={Logo} style={{"width" : "26%", "margin-left" : "3%"}}/>
-        </div>
-        <div className="w3-display-topright w3-padding-large w3-xlarge">
-          <a href="faq">
-            FAQs
-          </a>
-        </div>
-      </div>
-      <div className="w3-display-middle">
-        <h1 className="w3-xxxlarge w3-animate-top">RETHINK BUYING</h1>
-        <hr id="border1" className="w3-border-grey" />
-        <p className="w3-large w3-center">Join our Beta Launch List 🚀</p>
-        <div className="join-link">
-          <a className="brk-btn" href="#" class="brk-btn">
-            Join Now
-          </a>
-        </div>
-      </div>
-      <div className="w3-display-bottomleft w3-padding-large">
-        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3</a>
-      </div>
-    </div>
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Give me your damn email!
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
   );
-};
+}
 
-export default Home;
+// function App() {
+//   const [modalShow, setModalShow] = React.useState(false);
+
+//   return (
+//     <>
+//       <Button variant="primary" onClick={() => setModalShow(true)}>
+//         Launch vertically centered modal
+//       </Button>
+
+//       <MyVerticallyCenteredModal
+//         show={modalShow}
+//         onHide={() => setModalShow(false)}
+//       />
+//     </>
+//   );
+// }
+
+// render(<App />);
+
+
+function Home() {
+  const [modalShow, setModalShow] = React.useState(false);
+
+    return (
+      <div className="bgimg w3-display-container w3-animate-opacity w3-text-white" id="Body-Home">
+        <div className="w3-display-middle">
+          <h1 className="w3-xxxlarge w3-animate-top">RETHINK BUYING</h1>
+          <hr id="border1" className="w3-border-grey" />
+          <p className="w3-large w3-center">Join our Beta Launch List 🚀</p>
+          <div className="join-link">
+            <a className="brk-btn" href="#" class="brk-btn" variant="primary" onClick={() => setModalShow(true)}>
+              Join Now
+            </a>
+          </div>
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
+        </div>
+        <div className="w3-display-bottomleft w3-padding-large">
+          Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3</a>
+        </div>
+      </div>
+    );
+  };
+
+  export default Home;

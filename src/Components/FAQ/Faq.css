@@ -1,0 +1,13 @@
+.FAQ-Container {
+    margin-top: 10%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.FAQ-Title {
+    margin-top: 15%;
+    color: white;
+}
+
+body,h1 {font-family: "Arial", sans-serif}
+    body, html {height: 100%}

@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './Components/nav/NavBar';
+// import EmailModal from "./Components/modal/EmailModal"
 import ApplicationViews from "./Components/ApplicationViews";
 import './App.css';
 import './JoinButton.scss';
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
+      {/* <EmailModal /> */}
       <ApplicationViews />
     </>
   );

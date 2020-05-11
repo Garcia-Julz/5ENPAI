@@ -40,7 +40,6 @@
 body,h1 {font-family: "Arial", sans-serif}
     body, html {height: 100%}
     .bgimg {
-      /* background-image: url('./assets/5enpai_background_service_homepage.png'); */
       min-height: 100vh;
       background-position: center;
       background-size: cover;
@@ -58,5 +57,9 @@ body{
            rgba(0, 0, 0, 0.7)
          ),
          /* bottom, image */
-         url('./assets/5enpai_background_service_homepage.png');
+         url('./Assets/5enpai_background_service_homepage.png');
      }
+
+/* #Body-Home {
+  z-index: -1;
+} */
