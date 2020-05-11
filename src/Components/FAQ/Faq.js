@@ -9,7 +9,7 @@ const FAQ = () => {
     <div className="bgimg w3-display-container w3-animate-opacity">
       <div>
         <div className="FAQ-Title">
-          <center><h1 className="w3-xxxlarge w3-animate-top">Hello, world!</h1></center>
+          <center><h1 className="w3-xxxlarge w3-animate-top">FAQ</h1></center>
         </div>
       </div>
       <div className="FAQ-Container">
@@ -24,7 +24,7 @@ const FAQ = () => {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="1">
-              What is 5ENPAI?
+              What can 5ENPAI do for me?
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body>5ENPAI is a consultant service in which we give users privacy from all those pesky sponsored products, target marketing ads and the power to shop in Amazon with the power of Prime without the commitment of the subscription.</Card.Body>
@@ -32,7 +32,7 @@ const FAQ = () => {
           </Card>
           <Card>
             <Accordion.Toggle as={Card.Header} eventKey="2">
-              What is a 5ENPAI?
+              Why are you called 5ENPAI?
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body>5ENPAI is just another way to say senpai. In Japanese culture, a senpai is an upperclassman who would mentor an underclassman. This term is used more broadly to mean “teacher”.</Card.Body>

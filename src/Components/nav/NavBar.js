@@ -17,15 +17,15 @@ const NavBar = () => {
         </div>
         <ol className="w3-display-topright w3-padding-large w3-xlarg" style={{"display" : "flex", "color" : "white", "list-style" : "none"}}>
           <li>
-            <a className="nav-link" href="/">
+            <Link className="nav-link" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <br/>
           <li>
-            <a className="nav-link" href="faq">
+            <Link className="nav-link" href="faq">
               FAQs
-            </a>
+            </Link>
           </li>
         </ol>
       </nav>
